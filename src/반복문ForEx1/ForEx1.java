@@ -19,11 +19,19 @@ public class ForEx1 {
         Scanner sc = new Scanner(System.in);
         System.out.print("정수를 입력 하세요 : ");
         int number = sc.nextInt();
-        int sum = 0;
-        while (number > 0) {
-            sum += number;
-            number--;
+        //int sum = 0;
+        /*while (number > 0) {
+            sum += number; // sum = sum + number;
+            number--;*/
+        /*for(int i = 1; i <= number; i++) {
+            sum += i;*/
+        //int number = sc.nextInt();
+        int result = recursiveFunc(number);
+        System.out.print(result);
         }
-        System.out.println("정수의 합은 : " + sum);
+        public static int recursiveFunc(int n) {
+        if(n == 1) return 1;
+        return n + recursiveFunc(n - 1);
+        //System.out.println("정수의 합은 : " + sum);
     }
 }
