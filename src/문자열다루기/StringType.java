@@ -55,5 +55,9 @@ public class StringType {
         System.out.println(name);
         System.out.println(arrName);
 
+        String v = "a:b:c:d";
+        String[] result = v.split(":");  // result는 {"a", "b", "c", "d"}
+        System.out.println(result);
+
     }
 }
