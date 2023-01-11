@@ -8,14 +8,18 @@ import java.util.Scanner;
 public class ClassMethod {
     public static void main(String[] args) {
         Sample sample = new Sample(); // 클래스 내에 생성자가 없으면 기본 생성자가 호출 된다
+        // 샹성자 호출 시 전달하는 매개변수 없다
         Scanner sc = new Scanner(System.in);
         System.out.print("정수값 입력 : ");
         int n1 =sc.nextInt();
         int n2 =sc.nextInt();
         int rst = sample.sum(n1, n2); // sum()은 매개변수와 반환값이 있는 메소드
         System.out.println(rst);
-        sample.say();
+        sample.say(); // say() 메소드 호출위해 클래스를 객체로 만들고 객체의 메소드로 접근
         System.out.println(sample.sayStr());
+
+        int rst2 = sample.sum(1, 2, 3, 4, 5);
+        System.out.println(rst2);
     }
     }
 
