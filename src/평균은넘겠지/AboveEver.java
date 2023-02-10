@@ -36,7 +36,7 @@ public class AboveEver {
             total = total + score[i]; // 학생 수맠믐 입력된 성적 누적 해 총점 구함
         }
 //        double aver = (double) total / cnt; // 총점을 학생 수로 나눠 평균을 구함
-//        for(int e : score)
+//        for(int e : score.txt)
 //            [-]
         return 0;
     }
